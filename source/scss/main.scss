@@ -1,0 +1,46 @@
+@import "views/footer";
+@import "views/header";
+@import "views/main";
+
+$primary-color :red;
+$secondary-color:#FF9900;
+
+$primary-font:"Arial", sans-serif;
+$secondary-font:"Verdana", sans-serif;
+
+body{
+  margin: 0 auto;
+}
+
+div{
+  color:red;
+}
+
+h1{
+  color: red;
+}
+
+h2.intro{
+  color:red;
+}
+
+.navigation{
+  background:$primary-color;
+
+  &menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &linkItem{
+      list-style: none;
+
+      &__link{
+        display: block;
+        padding: 15px;
+        background: $secondary-color;
+        color: #FFF;
+      }
+    }
+  }
+}
